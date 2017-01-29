@@ -1,0 +1,9 @@
+development:
+  adapter: postgresql
+  database: saasize_development 
+  min_messages: warning
+
+test:
+  adapter: postgresql
+  database: saasize_test 
+  min_messages: warning

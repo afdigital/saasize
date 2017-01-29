@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Saasize</title>
+    <%= stylesheet_link_tag    "saasize/application", media: "all" %>
+    <%= javascript_include_tag "saasize/application" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <% flash.each do |k,v| %>
+      <div class='flash <%= k %>'><%= v %></div>
+    <% end %>
+    <%= render "saasize/shared/login" %>
+    <%= yield %>
+  </body>
+</html>
